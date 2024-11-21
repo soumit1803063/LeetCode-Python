@@ -4,13 +4,6 @@ import os
 
 class FastIO:
     def __init__(self, input_file: Optional[str] = None, output_file: Optional[str] = None):
-        """
-        Initialize FastIO class.
-        
-        If input_file and output_file are provided, use them for file-based I/O.
-        Automatically create the output file if it does not exist.
-        Otherwise, use sys.stdin and sys.stdout for standard I/O.
-        """
         self.use_file = input_file is not None and output_file is not None
         if self.use_file:
             # Open input file for reading
